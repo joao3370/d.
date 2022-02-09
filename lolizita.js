@@ -1702,12 +1702,12 @@ enviar("Aᴅᴇᴜs")
 //ANTI 
 if (isCmd && isFiltered(from) && !isGroup && isAntiflod && !isOwner && !mek.key.fromMe) {
 console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${comando}`), 'DE:', color(pushname))
-return sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okLolizita(me)}, type: 1}], {quoted: mek})
+return sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedro(me)}, type: 1}], {quoted: mek})
 }
 
 if (isCmd && isFiltered(from) && isGroup && isAntiflod && !isOwner && !mek.key.fromMe) {
 console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${comando}`), 'DE:', color(pushname))
-return sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okLolizita(me)}, type: 1}], {quoted: mek})
+return sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedro(me)}, type: 1}], {quoted: mek})
 }
 
 /********** TIPOS DE MENSAGENS **********/
@@ -1749,7 +1749,7 @@ pedro.chatRead(from)
 
 /********** USUÁRIO BANIDO **********/
 if (isCmd && isBanned) {
-sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.ban(SeuNome, pushname), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okLolizita(me)}, type: 1}], {quoted: mek})
+sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.ban(SeuNome, pushname), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedro(me)}, type: 1}], {quoted: mek})
 return console.log('\x1b[1;31m~\x1b[1;37m>', '[', color('BAN', "red"), ']', color('Ignorando', "yellow"), 'comando', color('do', "yellow"), color(pushname), 'Horas', color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'))
 }
 
