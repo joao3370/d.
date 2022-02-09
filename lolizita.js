@@ -802,6 +802,7 @@ bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: alteraçãoDaD
 console.log(anu)
 }
 })
+
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
