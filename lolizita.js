@@ -1749,7 +1749,7 @@ pedro.chatRead(from)
 
 /********** USUÁRIO BANIDO **********/
 if (isCmd && isBanned) {
-sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.ban(SeuNome, pushname), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.ban(SeuNome, pushname), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okLolizita(me)}, type: 1}], {quoted: mek})
 return console.log('\x1b[1;31m~\x1b[1;37m>', '[', color('BAN', "red"), ']', color('Ignorando', "yellow"), 'comando', color('do', "yellow"), color(pushname), 'Horas', color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'))
 }
 
@@ -1768,12 +1768,12 @@ ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gamb
 buff = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registro.length}&seri=${serialUser}&pp=${ppimg}&bg=https://bit.ly/walpamikel`)
 if (m.isGroup) {
 addRegisteredUser(sender, pushname, time, serialUser)
-await pedro.sendMessage(from, buff, image, {quoted: mek, thumbnail: null, caption: linguagem.registroBypedroHehe(serialUser, time, pushname, sender)})
+await pedro.sendMessage(from, buff, image, {quoted: mek, thumbnail: null, caption: linguagem.registroByTobiHehe(serialUser, time, pushname, sender)})
 addATM(sender)
 addLevelingId(sender)
 } else {
 addRegisteredUser(from, pushname, time, serialUser)
-await pedro.sendMessage(from, buff, image, {quoted: mek, thumbnail: null, caption: linguagem.registroBypedroHehe(serialUser, time, pushname, sender)})
+await pedro.sendMessage(from, buff, image, {quoted: mek, thumbnail: null, caption: linguagem.registroByTobiHehe(serialUser, time, pushname, sender)})
 addATM(sender)
 addLevelingId(sender)                  
 }
