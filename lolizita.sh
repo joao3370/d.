@@ -1,6 +1,6 @@
 while :
 do
-      node pedro.js
+      node lolizita.js
       sleep 1
       
 done
