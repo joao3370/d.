@@ -801,7 +801,6 @@ teks = `「 [❗] DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo fo
 bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: alteraçãoDaDescrição})
 console.log(anu)
 }
-})
 
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
