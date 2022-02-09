@@ -782,19 +782,6 @@ console.log('Error : %s', color(e, 'red'))
 }
 })
 
-/**** FUNCTION GRUPO ABERTO ****/
-if(anu.announce == 'false'){
-teks = `「 [❗] GRUPO ABERTO 」\n\n_O grupo foi aberto pelo administrador_\n_Agora todos os membros podem enviar mensagens_`
-bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: grupoAbertoBybdr})
-}
-
-/**** FUNCTION GRUPO FECHADO ****/
-else if(anu.announce == 'true'){
-teks = `「 [❗] GRUPO FECHADO 」\n\n_O grupo foi fechado pelo administrador_\n_Agora, apenas administradores podem enviar mensagens_`
-bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: grupoFechadoBybdr})
-console.log(anu)
-}
-
 /**** FUNCTION DESCRIÇÃO ****/
 else if(!anu.desc == ''){
 teks = `「 [❗] DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo foi alterada pelo adm wa.me/${anu.descOwner.split('@')[0]}\n• Nova Descrição : \n${anu.desc}`
