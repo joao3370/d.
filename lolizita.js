@@ -724,63 +724,6 @@ ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
 } catch {
 ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
 }
-mett = ["1", "2", "3"] 
-res = mett[Math.floor(Math.random() * mett.length)]
-if (res == "1") {
-teks = `${tempoByPedro}, @${num.split('@')[0]}.\n\nBem vindo(a) ao\n${mdata.subject}\n\n🌻•𝑬𝑵𝑻𝑹𝑶𝑼 𝑺𝑬 𝑨𝑷𝑹𝑬𝑺𝑬𝑵𝑻𝑨•\n📸 •FOTO(Opcional)\nNOME\n•IDADE\n⚠️ •LEIA AS REGRAS DO GRUPO\n\n*APROVEITE O GRUPO!*`
-let buff = await getBuffer(ppimg)
-pedro.sendMessage(mdata.id, buff, MessageType.image, {thumbnail:null, caption: teks})
-setTimeout( () => {
-result = fs.readFileSync(`./base de dados/database/figurinhas/sexo_sticker.webp`)
-pedro.sendMessage(mdata.id, result, MessageType.sticker)
-}, 1000)
-} else if (res == "2") {
-res = mett[Math.floor(Math.random() * mett.length)]
-teks = `${tempoByPedro} @${num.split('@')[0]} ...! `
-result = fs.readFileSync(`./base de dados/lib/bot/fotos/welcomeByTobi.jpeg`)
-pedro.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
-setTimeout( () => {
-pedro.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
-}, 1000)
-} else if (res == "3") {
-res = mett[Math.floor(Math.random() * mett.length)]
-teks = `${tempoByPedro} @${num.split('@')[0]} ... ulala!`
-
-fotosAnime = ["1", "2", "3", "4", "5"]
-ramdomRes = fotosAnime[Math.floor(Math.random() * fotosAnime.length)]
-result = fs.readFileSync(`./base de dados/lib/bot/fotos/animeByTobi` + ramdomRes + `.png`)
-pedro.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
-setTimeout( () => {
-pedro.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
-}, 1000)
-}          
- //
-
-} else if (anu.action == 'remove') {
-num = anu.participants[0]
-try {
-ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
-} catch {
-ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
-}
-mett = ["1", "2"] 
-res = mett[Math.floor(Math.random() * mett.length)]
-if (res == "1") {
-teks = `Adeus @${num.split('@')[0]}, você foi excelente membro.`
-result = fs.readFileSync(`./src/welcometeste`)
-bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
-} else if (res == "2") {
-mett = ["1", "2"]
-res = mett[Math.floor(Math.random() * mett.length)]
-teks = `O participante @${num.split('@')[0]} saiu do grupo..`
-let buff = await getBuffer(ppimg)
-bdr.sendMessage(mdata.id, buff, MessageType.image, {thumbnail:null, caption: teks})
-}
-}
-} catch (e) {
-console.log('Error : %s', color(e, 'red'))
-}
-})
 
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
