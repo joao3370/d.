@@ -698,8 +698,118 @@ var  tempoByPedro = '' +  tempoByPedro;
 
 //WELCOME
 
-function 0x7926(){const _0x5d3b80=['text','groupRemove','Saiu\x20🤨','announce','mememteeeekkeke','getProfilePicture','Números\x20fake\x20não\x20são\x20permitidos\x20nesse\x20grupo️️','3895422tOMpiR','⚠️\x20*MEMBRO\x20PROMOVIDO*\x20🖐️🤨\x0a\x0a*Novo\x20Admin:\x20@','Opae\x20boy,\x20de\x20boa?\x20._.','sendMessage','participants','audio','111XpbxKT','&pp=','length','split','group-participants-update','O\x20integrante\x20@','0@s.whatsapp.net','.png','🦋\x20DETECTE\x20PROMOTE\x20🌙',',\x20@','594471sJvqGu','image','buttonsMessage','ephemeralMessage','log','jid','「\x20.','sendMessage','participants','audio','111XpbxKT','&pp=','length','split','group-participants-update','O\x20integrante\x20@','0@s.whatsapp.net','.png','🦋\x20DETECTE\x20PROMOTE\x20🌙',',\x20@','594471sJvqGu','image','buttonsMessage','ephemeralMessage','log','jid','「\x20*❗GRUPO\x20ABERTO❗\x20」','guei','「\x20[❗]\x20GRUPO\x20ABERTO*\x20」\x0a\x0a_O\x20grupo\x20foi\x20aberto\x20pelo\x20administrador_\x0a_Agora\x20todos\x20os\x20membros\x20podem\x20enviar\x20mensagens_','&pesan=','https://s19.aconvert.com/convert/p3r68-cdx67/pe6d0-z2eul.mp3','add','remove','action','red','https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg','PHOTO','Ξ\x20Registrar','Lolizita','random','readFileSync','23098SvfSIQ','floor','2693196VcOkiL','./base\x20de\x20dados/lib/bot/fotos/animeBypedro','message','subject','demote','8466029ucHyIu','9PTWlkp','audio/mp4','!\x20@','groupMetadata','@c.us','\x20saiu\x20do\x20grupo...\x20bye\x20bye👋','「\x20*[❗]\x20DESCRIÇÃO\x20DO\x20GRUPO\x20ALTERADA*\x20」\x0a\x0aA\x20descrição\x20do\x20grupo\x20foi\x20alterada\x20pelo\x20administrador\x20wa.me/','./base\x20de\x20dados/database/audios/newMember.mp3','./base\x20de\x20dados/database/figurinhas/welcomeBypedro1.webp','Fala\x20alguma\x20coisa,\x20@','「\x20*❗GRUPO\x20FECHADO❗\x20」','Banindo\x20O\x20Número\x20Fake...','desc',',\x20você\x20foi\x20ou\x20seria\x20um\x20excelente\x20~Gado\x20Top\x20de\x20Linha~\x20amigo(a)\x20e\x20membro.','promote','43296jUIXPT','...\x20Escute\x20o\x20audio\x20para\x20permanecer\x20no\x20grupo._','prepareMessage','5DsSkGy','&bg=https://bit.ly/walpamikel','1155IXjOKv','Error\x20:\x20%s','user','6288213840883-1616169743@g.us','.\x0a\x0aBem\x20vindo(a)\x20ao\x20:\x20','false','imageMessage','\x0a\x0a👾\x20•𝑬𝑵𝑻𝑹𝑶𝑼\x20𝑺𝑬\x20𝑨𝑷𝑹𝑬𝑺𝑬𝑵𝑻𝑨•\x0a📸\x20•F𝜣T𝜣\x0a👻\x20•N𝜣ME\x0a📌\x20•CID∆DE\x0a🗓️\x20•ID∆DE\x0a⚠️\x20•LEI∆\x20∆S\x20REGR∆S\x20D𝜣\x20GRUP𝜣\x0a\x0a*APROVEITE\x20O\x20GRUPO!%s','user','6288213840883-1616169743@g.us','.\x0a\x0aBem\x20vindo(a)\x20ao\x20:\x20','false','imageMessage','\x0a\x0a👾\x20•𝑬𝑵𝑻𝑹𝑶𝑼\x20𝑺𝑬\x20𝑨𝑷𝑹𝑬𝑺𝑬𝑵𝑻𝑨•\x0a📸\x20•F𝜣T𝜣\x0a👻\x20•N𝜣ME\x0a📌\x20•CID∆DE\x0a🗓️\x20•ID∆DE\x0a⚠️\x20•LEI∆\x20∆S\x20REGR∆S\x20D𝜣\x20GRUP𝜣\x0a\x0a*APROVEITE\x20O\x20GRUPO!*','Press\x20F\x20chat\x20👋😙._.','true','3979730vCHUvy','⚠️\x20*MEMBRO\x20REBAIXADO*\x20🖐️🤨\x0a\x0a*Perdeu\x20Admin:\x20@','sticker'];_0x7926=function(){return _0x5d3b80;};return _0x7926();}function _0x5ea4(_0x16460d,_0x1ab5b7){const _0x7926f8=_0x7926();return _0x5ea4=function(_0x5ea481,_0x5d7c84){_0x5ea481=_0x5ea481-0xee;let _0x52b6f1=_0x7926f8[_0x5ea481];return _0x52b6f1;},_0x5ea4(_0x16460d,_0x1ab5b7);}const _0x4baa22=_0x5ea4;(function(_0x4cb46f,_0x334abf){const _0x43c822=_0x5ea4,_0x5ec1f7=_0x4cb46f();while(!![]){try{const _0x1c1bbe=parseInt(_0x43c822(0x104))/0x1(parseInt(_0x43c822(0x123))/0x2)+-parseInt(_0x43c822(0x10e))/0x3+parseInt(_0x43c822(0x125))/0x4*(-parseInt(_0x43c822(0x13d))/0x5)+parseInt(_0x43c822(0xfe))/0x6+-parseInt(_0x43c822(0x13f))/0x7*(-parseInt(_0x43c822(0x13a))/0x8)+parseInt(_0x43c822(0x12b))/0x9*(-parseInt(_0x43c822(0xf4))/0xa)+-parseInt(_0x43c822(0x12a))/0xb;if(_0x1c1bbe===_0x334abf)break;else _0x5ec1f7['push'](_0x5ec1f7['shift']());}catch(_0x5c79de){_0x5ec1f7['push'](_0x5ec1f7['shift']());}}}(_0x7926,0xbfac0),pedro['on'](_0x4baa22(0x108),async _0x2f9ebe=>{const _0x511c50=_0x4baa22;if(antifaker['includes'](_0x2f9ebe['jid'])){const _0x32b23a=await pedro['groupMetadata'](_0x2f9ebe['jid']);_0x2f9ebe[_0x511c50(0x11b)]==_0x511c50(0x119)&&(num=_0x2f9ebe['participants'][0x0],!num[_0x511c50(0x107)]('@')[0x0]['startsWith'](0x37)&&(pedro[_0x511c50(0x101)](_0x32b23a['id'],_0x511c50(0xfd),MessageType[_0x511c50(0xf7)]),setTimeout(async function(){const _0x438278=_0x511c50;console[_0x438278(0x112)](color('[','white'),color('!',_0x438278(0x11c)),color(']','white'),color(_0x438278(0x136),'red')),pedro[_0x438278(0xf8)](_0x32b23a['id'],[num]);},0x1388)));}const _0x5f9543=await pedro[_0x511c50(0x12e)](_0x2f9ebe[_0x511c50(0x113)]);if(_0x2f9ebe[_0x511c50(0x11b)]==_0x511c50(0x139)){num=_0x2f9ebe[_0x511c50(0x102)][0x0];try{ppimg=await pedro['getProfilePicture'](num[_0x511c50(0x107)]('@')[0x0]+_0x511c50(0x12f));}catch{ppimg=_0x511c50(0x11d);}let _0x34a642=await getBuffer('http://hadi-api.herokuapp.com/api/card/promote?nama=Promover\x20Detectado&member=@'+num[_0x511c50(0x107)]('@')[0x0]+_0x511c50(0x117)+encodeURI(_0x5f9543[_0x511c50(0x128)])+_0x511c50(0x105)+ppimg+_0x511c50(0x13e));var _0x56d34c=await pedro[_0x511c50(0x13c)](_0x5f9543['id'],_0x34a642,MessageType['image'],{'thumbnail':null}),_0x176afb=_0x56d34c['message'][_0x511c50(0x111)]?_0x56d34c[_0x511c50(0x127)][_0x511c50(0x111)]:_0x56d34c;const _0x856d1c=[{'buttonId':_0x511c50(0x115),'buttonText':{'displayText':_0x511c50(0x10c)},'type':0x1}],_0x14d7bb={'contentText':_0x511c50(0xff)+num[_0x511c50(0x107)]('@')[0x0],'buttons':_0x856d1c,'headerType':0x4,'imageMessage':_0x176afb[_0x511c50(0x127)][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0x5f9543['id'],_0x14d7bb,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}});}else{if(_0x2f9ebe['action']==_0x511c50(0x129)){num=_0x2f9ebe[_0x511c50(0x102)][0x0];try{ppimg=await pedro[_0x511c50(0xfc)](num[_0x511c50(0x107)]('@')[0x0]+_0x511c50(0x12f));}catch{ppimg='https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg';}let _0x70d1b6=await getBuffer('http://hadi-api.herokuapp.com/api/card/demote?nama=Rebaixar\x20Detectado&member=@'+num['split']('@')[0x0]+_0x511c50(0x117)+encodeURI(_0x5f9543[_0x511c50(0x128)])+_0x511c50(0x105)+ppimg+'&bg=https://bit.ly/walpamikel');var _0x56d34c=await pedro[_0x511c50(0x13c)](_0x5f9543['id'],_0x70d1b6,MessageType[_0x511c50(0x10f)],{'thumbnail':null}),_0x176afb=_0x56d34c['message'][_0x511c50(0x111)]?_0x56d34c[_0x511c50(0x127)][_0x511c50(0x111)]:_0x56d34c;const _0x33ffa7=[{'buttonId':_0x511c50(0x115),'buttonText':{'displayText':'🦋\x20DETECTE\x20DEMOTE\x20🌙'},'type':0x1}],_0x450300={'contentText':_0x511c50(0xf5)+num[_0x511c50(0x107)]('@')[0x0],'buttons':_0x33ffa7,'headerType':0x4,'imageMessage':_0x176afb['message'][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0x5f9543['id'],_0x450300,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}});}}const _0x9f0621=await getBuffer(_0x511c50(0x118)),_0x17577f=_0x1fce76=>{const _0x392896=_0x511c50;pedro[_0x392896(0x101)](_0x5f9543['id'],_0x9f0621,MessageType[_0x392896(0x103)],{'mimetype':_0x392896(0x12c),'ptt':!![],'contextInfo':{'mentionedJid':[num]}});};if(!welcome['includes'](_0x2f9ebe[_0x511c50(0x113)]))return;try{const _0xd325a6=await pedro[_0x511c50(0x12e)](_0x2f9ebe[_0x511c50(0x113)]);console[_0x511c50(0x112)](_0x2f9ebe);if(_0x2f9ebe[_0x511c50(0x11b)]==_0x511c50(0x119)){num=_0x2f9ebe[_0x511c50(0x102)][0x0];try{ppimg=await pedro[_0x511c50(0xfc)](_0x2f9ebe['participants'][0x0][_0x511c50(0x107)]('@')[0x0]+_0x511c50(0x12f));}catch{ppimg=_0x511c50(0x11d);}mett=['1','2','3','4'],res=mett[Math[_0x511c50(0x124)](Math['random']()mett[_0x511c50(0x106)])];if(res=='1'){let _0x5478d0=await getBuffer(ppimg);const _0x1d4f83=await pedro[_0x511c50(0x13c)](_0xd325a6['id'],_0x5478d0,MessageType[_0x511c50(0x10f)],{'thumbnail':null});let _0x309128=_0x1d4f83[_0x511c50(0x127)][_0x511c50(0x111)]?_0x1d4f83['message'][_0x511c50(0x111)]:_0x1d4f83;const _0x36823a=[{'buttonId':'Rg','buttonText':{'displayText':'Ξ\x20Registrar'},'type':0x1}],_0xcaab9d={'contentText':tempoBypedro+_0x511c50(0x10d)+num[_0x511c50(0x107)]('@')[0x0]+_0x511c50(0xee)+_0xd325a6[_0x511c50(0x128)],'footerText':_0x511c50(0x100),'buttons':_0x36823a,'headerType':0x4,'imageMessage':_0x309128['message'][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0xd325a6['id'],_0xcaab9d,MessageType['buttonsMessage'],{'contextInfo':{'mentionedJid':[num]}}),setTimeout(()=>{const _0x319b64=_0x511c50;result=fs['readFileSync'](_0x319b64(0x133)),pedro[_0x319b64(0x101)](_0xd325a6['id'],result,MessageType[_0x319b64(0xf6)]);},0x3e8);}else{if(res=='2'){res=mett[Math[_0x511c50(0x124)](Math[_0x511c50(0x121)]()*mett[_0x511c50(0x106)])];let _0x1cbbd3=await getBuffer(ppimg);const _0x8ddb18=await pedro[_0x511c50(0x13c)](_0xd325a6['id'],_0x1cbbd3,MessageType[_0x511c50(0x10f)],{'thumbnail':null});let _0x17b7c8=_0x8ddb18[_0x511c50(0x127)]['ephemeralMessage']?_0x8ddb18['message'][_0x511c50(0x111)]:_0x8ddb18;const _0x376102=[{'buttonId':'Rg','buttonText':{'displayText':_0x511c50(0x11f)},'type':0x1}],_0x60c0da={'contentText':tempoBypedro+_0x511c50(0x10d)+num[_0x511c50(0x107)]('@')[0x0]+'.\x0a\x0aBem\x20vindo(a)\x20ao\x0a'+_0xd325a6[_0x511c50(0x128)]+_0x511c50(0xf1),'footerText':'Opae\x20boy,\x20de\x20boa?\x20._.','buttons':0x376102,'headerType':0x4,'imageMessage':_0x17b7c8[_0x511c50(0x127)][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0xd325a6['id'],_0x60c0da,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}}),setTimeout(()=>{const _0x166e46=_0x511c50;pedro['sendMessage'](_0xd325a6['id'],_0x166e46(0x134)+num['split']('@')[0x0],MessageType[_0x166e46(0xf7)],{'contextInfo':{'mentionedJid':[num]}});},0x3e8);}else{if(res=='3'){res=mett[Math[_0x511c50(0x124)](Math[_0x511c50(0x121)]()*mett[_0x511c50(0x106)])],fotosAnime=['1','2','3','4','5'],ramdomRes=fotosAnime[Math['floor'](Math[_0x511c50(0x121)]()*fotosAnime['length'])];let _0x28a5e3=await fs[_0x511c50(0x122)](_0x511c50(0x126)+ramdomRes+_0x511c50(0x10b));const _0x5d8437=await pedro[_0x511c50(0x13c)](_0xd325a6['id'],_0x28a5e3,MessageType[_0x511c50(0x10f)],{'thumbnail':null});let _0x2f5de4=_0x5d8437[_0x511c50(0x127)]['ephemeralMessage']?_0x5d8437[_0x511c50(0x127)][_0x511c50(0x111)]:_0x5d8437;const _0x482c7f=[{'buttonId':'Rg','buttonText':{'displayText':_0x511c50(0x11f)},'type':0x1}],_0x2b9aed={'contentText':tempoBypedro+'\x20@'+num[_0x511c50(0x107)]('@')[0x0]+'\x20...\x20Para\x20permanecer\x20neste\x20grupo,\x20veja\x20a\x20imagem\x20acima\x20e\x20diga\x20qual\x20é\x20o\x20nome\x20do\x20anime!\x20🤝🏼','footerText':_0x511c50(0x100),'buttons':_0x482c7f,'headerType':0x4,'imageMessage':_0x2f5de4[_0x511c50(0x127)][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0xd325a6['id'],_0x2b9aed,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}});}else res=='4'&&(res=mett[Math[_0x511c50(0x124)](Math['random']()*mett[_0x511c50(0x106)])],setTimeout(()=>{const _0x4e2523=_0x511c50;pedro[_0x4e2523(0x101)](_0xd325a6['id'],''+tempoBypedro+0x4e2523(0x12d)+num[_0x4e2523(0x107)]('@')[0x0]+_0x4e2523(0x13b),MessageType['text'],{'contextInfo':{'mentionedJid':[num]}});},0x3e8),setTimeout(()=>{const _0x232e30=_0x511c50;pedro[_0x232e30(0x101)](_0xd325a6['id'],fs[_0x232e30(0x122)](_0x232e30(0x132)),MessageType[_0x232e30(0x103)],{'mimetype':_0x232e30(0x12c),'ptt':!![],'contextInfo':{'mentionedJid':[num]}});},0x7d0));}}}else{if(_0x2f9ebe['action']==_0x511c50(0x11a)){num=_0x2f9ebe[_0x511c50(0x102)][0x0];try{ppimg=await pedro[_0x511c50(0xfc)](_0x2f9ebe[_0x511c50(0x102)][0x0][_0x511c50(0x107)]('@')[0x0]+'@c.us');}catch{ppimg=_0x511c50(0x11d);}mett=['1','2'],res=mett[Math[_0x511c50(0x124)](Math[_0x511c50(0x121)]()*mett['length'])];if(res=='1'){const _0x18d413=[_0x511c50(0x109)+num['split']('@')[0x0]+_0x511c50(0x130),'Adeus\x20@'+num[_0x511c50(0x107)]('@')[0x0]+_0x511c50(0x138)];var _0x3043a3=_0x18d413[Math['floor'](Math['random']()*_0x18d413[_0x511c50(0x106)])];num=_0x2f9ebe[_0x511c50(0x102)][0x0];let _0xc59b20=await getBuffer(ppimg);const _0x59f7c5=await pedro[_0x511c50(0x13c)](_0xd325a6['id'],_0xc59b20,MessageType['image'],{'thumbnail':null});let _0x46ab45=_0x59f7c5[_0x511c50(0x127)][_0x511c50(0x111)]?_0x59f7c5[_0x511c50(0x127)][_0x511c50(0x111)]:_0x59f7c5;const _0x7d991a=[{'buttonId':'k','buttonText':{'displayText':_0x511c50(0xf9)},'type':0x1}],_0x15d620={'contentText':''+_0x3043a3,'footerText':_0x511c50(0xf2),'buttons':_0x7d991a,'headerType':0x4,'imageMessage':_0x46ab45['message'][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0xd325a6['id'],_0x15d620,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}});}else res=='2'&&(res=mett[Math[_0x511c50(0x124)](Math['random']()mett['length'])],_0x17577f(_0xd325a6['id']));}}}catch(_0x3567a1){console[_0x511c50(0x112)](_0x511c50(0x140),color(_0x3567a1,_0x511c50(0x11c)));}}),pedro['on']('group-update',async _0x2e1199=>{const _0x36493c=_0x4baa22;falfa={'key':{'fromMe':![],'participant':_0x36493c(0x10a),'remoteJid':_0x36493c(0x10a)},'message':{'groupInviteMessage':{'groupJid':_0x36493c(0x142),'inviteCode':_0x36493c(0xfb),'groupName':_0x36493c(0x120),'caption':''+pedro[_0x36493c(0x141)]['name']}}};const _0x4ddf08={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':_0x36493c(0x114),'body':'','previewType':_0x36493c(0x11e),'thumbnailUrl':'','thumbnail':img2}},_0x15914a={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':_0x36493c(0x135),'body':'','previewType':'PHOTO','thumbnailUrl':'','thumbnail':img2}},_0x2ad89d={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':'「\x20❗DESCRIÇÃO\x20ALTERADA❗\x20」','body':'','previewType':_0x36493c(0x11e),'thumbnailUrl':'','thumbnail':img2}};metdata=await pedro['groupMetadata'](_0x2e1199[_0x36493c(0x113)]);if(_0x2e1199[_0x36493c(0xfa)]==_0x36493c(0xef))teks=_0x36493c(0x116),pedro[_0x36493c(0x101)](metdata['id'],teks,MessageType['text'],{'contextInfo':_0x4ddf08});else{if(_0x2e1199[_0x36493c(0xfa)]==_0x36493c(0xf3))teks='「\x20[❗]\x20GRUPO\x20FECHADO*\x20」\x0a\x0a_O\x20grupo\x20foi\x20fechado\x20pelo\x20administrador_0x18d413[_0x511c50(0x106)])];num=_0x2f9ebe[_0x511c50(0x102)][0x0];let _0xc59b20=await getBuffer(ppimg);const _0x59f7c5=await pedro[_0x511c50(0x13c)](_0xd325a6['id'],_0xc59b20,MessageType['image'],{'thumbnail':null});let _0x46ab45=_0x59f7c5[_0x511c50(0x127)][_0x511c50(0x111)]?_0x59f7c5[_0x511c50(0x127)][_0x511c50(0x111)]:_0x59f7c5;const _0x7d991a=[{'buttonId':'k','buttonText':{'displayText':_0x511c50(0xf9)},'type':0x1}],_0x15d620={'contentText':''+_0x3043a3,'footerText':_0x511c50(0xf2),'buttons':_0x7d991a,'headerType':0x4,'imageMessage':_0x46ab45['message'][_0x511c50(0xf0)]};pedro[_0x511c50(0x101)](_0xd325a6['id'],_0x15d620,MessageType[_0x511c50(0x110)],{'contextInfo':{'mentionedJid':[num]}});}else res=='2'&&(res=mett[Math[_0x511c50(0x124)](Math['random']()*mett['length'])],_0x17577f(_0xd325a6['id']));}}}catch(_0x3567a1){console[_0x511c50(0x112)](_0x511c50(0x140),color(_0x3567a1,_0x511c50(0x11c)));}}),pedro['on']('group-update',async _0x2e1199=>{const _0x36493c=_0x4baa22;falfa={'key':{'fromMe':![],'participant':_0x36493c(0x10a),'remoteJid':_0x36493c(0x10a)},'message':{'groupInviteMessage':{'groupJid':_0x36493c(0x142),'inviteCode':_0x36493c(0xfb),'groupName':_0x36493c(0x120),'caption':''+pedro[_0x36493c(0x141)]['name']}}};const _0x4ddf08={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':_0x36493c(0x114),'body':'','previewType':_0x36493c(0x11e),'thumbnailUrl':'','thumbnail':img2}},_0x15914a={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':_0x36493c(0x135),'body':'','previewType':'PHOTO','thumbnailUrl':'','thumbnail':img2}},_0x2ad89d={'text':'oi','forwardingScore':0x3b9aca00,'externalAdReply':{'title':'「\x20*❗DESCRIÇÃO\x20ALTERADA❗*\x20」','body':'','previewType':_0x36493c(0x11e),'thumbnailUrl':'','thumbnail':img2}};metdata=await pedro['groupMetadata'](_0x2e1199[_0x36493c(0x113)]);if(_0x2e1199[_0x36493c(0xfa)]==_0x36493c(0xef))teks=_0x36493c(0x116),pedro[_0x36493c(0x101)](metdata['id'],teks,MessageType['text'],{'contextInfo':_0x4ddf08});else{if(_0x2e1199[_0x36493c(0xfa)]==_0x36493c(0xf3))teks='「\x20*[❗]\x20GRUPO\x20FECHADO*\x20」\x0a\x0a_O\x20grupo\x20foi\x20fechado\x20pelo\x20administrador_\x0a_Agora,\x20apenas\x20administradores\x20podem\x20enviar\x20mensagens_',pedro[_0x36493c(0x101)](metdata['id'],teks,MessageType[_0x36493c(0xf7)],{'contextInfo':_0x15914a}),console[_0x36493c(0x112)](_0x2e1199);else!_0x2e1199[_0x36493c(0x137)]==''&&(teks=_0x36493c(0x131)+_0x2e1199['descOwner']['split']('@')[0x0]+'\x0a•\x20Nova\x20Descrição\x20:\x20\x0a'+_0x2e1199[_0x36493c(0x137)],pedro['sendMessage'](metdata['id'],teks,MessageType[_0x36493c(0xf7)],{'contextInfo':_0x2ad89d}),console[_0x36493c(0x112)](_0x2e1199));}}));
-	
+	pedro.on('group-participants-update', async (anu) => {
+if (antifaker.includes(anu.jid)) {
+const mdata = await bdr.groupMetadata(anu.jid)
+if (anu.action == 'add'){
+num = anu.participants[0]
+if(!num.split('@')[0].startsWith(55)) {
+pedro.sendMessage(mdata.id, 'Números fake não são permitidos nesse grupo️️', MessageType.text)							
+setTimeout(async function () {
+console.log(color('[','white'), color('!','red'), color(']','white'), color('Banindo...','red'))
+pedro.groupRemove(mdata.id, [num])
+}, 5000)
+}
+}
+}		
+  
+if (!welcome.includes(anu.jid)) return
+try {
+const mdata = await bdr.groupMetadata(anu.jid)
+console.log(anu)
+if (anu.action == 'add') {
+num = anu.participants[0]
+try {
+ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
+} catch {
+ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
+}
+mett = ["1", "2", "3"] 
+res = mett[Math.floor(Math.random() * mett.length)]
+if (res == "1") {
+teks = `${tempoByPedro}, @${num.split('@')[0]}.\n\nBem vindo(a) ao\n${mdata.subject}\n\n🌻•𝑬𝑵𝑻𝑹𝑶𝑼 𝑺𝑬 𝑨𝑷𝑹𝑬𝑺𝑬𝑵𝑻𝑨•\n📸 •FOTO(Opcional)\nNOME\n•IDADE\n⚠️ •LEIA AS REGRAS DO GRUPO\n\n*APROVEITE O GRUPO!*`
+let buff = await getBuffer(ppimg)
+pedro.sendMessage(mdata.id, buff, MessageType.image, {thumbnail:null, caption: teks})
+setTimeout( () => {
+result = fs.readFileSync(`./base de dados/database/figurinhas/sexo_sticker.webp`)
+pedro.sendMessage(mdata.id, result, MessageType.sticker)
+}, 1000)
+} else if (res == "2") {
+res = mett[Math.floor(Math.random() * mett.length)]
+teks = `${tempoByPedro} @${num.split('@')[0]} ...! `
+result = fs.readFileSync(`./base de dados/lib/bot/fotos/welcomeByTobi.jpeg`)
+pedro.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
+setTimeout( () => {
+pedro.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
+}, 1000)
+} else if (res == "3") {
+res = mett[Math.floor(Math.random() * mett.length)]
+teks = `${tempoByPedro} @${num.split('@')[0]} ... ulala!`
+
+fotosAnime = ["1", "2", "3", "4", "5"]
+ramdomRes = fotosAnime[Math.floor(Math.random() * fotosAnime.length)]
+result = fs.readFileSync(`./base de dados/lib/bot/fotos/animeByTobi` + ramdomRes + `.png`)
+pedro.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
+setTimeout( () => {
+pedro.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
+}, 1000)
+}          
+ //
+
+} else if (anu.action == 'remove') {
+num = anu.participants[0]
+try {
+ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
+} catch {
+ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
+}
+mett = ["1", "2"] 
+res = mett[Math.floor(Math.random() * mett.length)]
+if (res == "1") {
+teks = `Adeus @${num.split('@')[0]}, você foi excelente membro.`
+result = fs.readFileSync(`./src/welcometeste`)
+bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
+} else if (res == "2") {
+mett = ["1", "2"]
+res = mett[Math.floor(Math.random() * mett.length)]
+teks = `O participante @${num.split('@')[0]} saiu do grupo..`
+let buff = await getBuffer(ppimg)
+bdr.sendMessage(mdata.id, buff, MessageType.image, {thumbnail:null, caption: teks})
+}
+}
+} catch (e) {
+console.log('Error : %s', color(e, 'red'))
+}
+})
+
+bdr.on('group-update', async (anu) => {
+falfa = {key: {fromMe: false,participant: "0@s.whatsapp.net",
+remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "a", "caption": `${NomeDoBot}`}}}
+const grupoAbertoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗GRUPO ABERTO❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
+const grupoFechadoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗GRUPO FECHADO❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
+const alteraçãoDaDescrição = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗DESCRIÇÃO ALTERADA❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
+metdata = await bdr.groupMetadata(anu.jid)
+
+/**** FUNCTION GRUPO ABERTO ****/
+if(anu.announce == 'false'){
+teks = `「 [❗] GRUPO ABERTO 」\n\n_O grupo foi aberto pelo administrador_\n_Agora todos os membros podem enviar mensagens_`
+bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: grupoAbertoBybdr})
+}
+
+/**** FUNCTION GRUPO FECHADO ****/
+else if(anu.announce == 'true'){
+teks = `「 [❗] GRUPO FECHADO 」\n\n_O grupo foi fechado pelo administrador_\n_Agora, apenas administradores podem enviar mensagens_`
+bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: grupoFechadoBybdr})
+console.log(anu)
+}
+
+/**** FUNCTION DESCRIÇÃO ****/
+else if(!anu.desc == ''){
+teks = `「 [❗] DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo foi alterada pelo adm wa.me/${anu.descOwner.split('@')[0]}\n• Nova Descrição : \n${anu.desc}`
+bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: alteraçãoDaDescrição})
+console.log(anu)
+}
+})
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
