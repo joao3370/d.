@@ -6011,10 +6011,18 @@ console.log('\x1b[1;31m~\x1b[1;37m>', '[', color('CMD', "red"), ']', color('Coma
 }
 } catch (e) {
 e = String(e)
-if (!e.includes("this.isZero") && !e.includes("Could not find MIME for Buffer <null>") && !e.includes("Cannot read property 'conversation' of null") && !e.includes("Cannot read property 'contextInfo' of undefined") && !e.includes("Cannot set property 'mtype' of undefined") && !e.includes("jid is not defined")) {
+if (!e.includes("this.isZero")) {
+if (!e.includes("Cannot read property 'conversation' of null")) {
+if (!e.includes("Cannot read property 'contextInfo' of undefined")) {
+if (!e.includes("Cannot set property 'mtype' of undefined")) {
+if (!e.includes("jid is not defined")) {
 console.log('Error : %s', color(e, 'red'))
 }
-{
 }
+}
+}
+}
+}
+})
 }
 starts()
