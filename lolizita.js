@@ -6015,6 +6015,6 @@ if (!e.includes("this.isZero") && !e.includes("Could not find MIME for Buffer <n
 console.log('Error : %s', color(e, 'red'))
 }
 {
-})
+}
 }
 starts()
