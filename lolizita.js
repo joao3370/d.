@@ -1702,12 +1702,12 @@ enviar("Aᴅᴇᴜs")
 //ANTI 
 if (isCmd && isFiltered(from) && !isGroup && isAntiflod && !isOwner && !mek.key.fromMe) {
 console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${comando}`), 'DE:', color(pushname))
-return sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+return sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
 }
 
 if (isCmd && isFiltered(from) && isGroup && isAntiflod && !isOwner && !mek.key.fromMe) {
 console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${comando}`), 'DE:', color(pushname))
-return sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+return sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.antiFlodkkj(sender), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okLolizita(me)}, type: 1}], {quoted: mek})
 }
 
 /********** TIPOS DE MENSAGENS **********/
