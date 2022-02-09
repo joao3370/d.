@@ -5972,9 +5972,9 @@ if (args.length < 1) return enviar("Texto?!")
 await mortandela(from)
 anu = await fetchJson("https://lolizit-api.herokuapp.com/api/textpro/" + marker + "?apikey=" + compreSuaApikey + "&text=" + q)
 buffer = await getBuffer(anu.resultado);
-await tobi.sendMessage(from, buffer, image, {quoted: mek, thumbnail: null, caption: "Niih <3"})
+await pedro.sendMessage(from, buffer, image, {quoted: mek, thumbnail: null, caption: "Niih <3"})
 } catch(sexo) {
-sendButMessage(m.chat, linguagem.nameByTobi(me), linguagem.googleErroFoto(), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.randomSexo()}, type: 1}], {quoted: mek})
+sendButMessage(m.chat, linguagem.nameBypedro(me), linguagem.googleErroFoto(), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.randomSexo()}, type: 1}], {quoted: mek})
 }
 break
 
@@ -6000,4 +6000,4 @@ console.log('Error : %s', color(e, 'red'))
 }
 })
 }
-starts()
+starts()	
