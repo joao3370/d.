@@ -782,29 +782,6 @@ console.log('Error : %s', color(e, 'red'))
 }
 })
 
-/**** FUNCTION DESCRIÇÃO ****/
-else if(!anu.desc == ''){
-teks = `「 [❗] DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo foi alterada pelo adm wa.me/${anu.descOwner.split('@')[0]}\n• Nova Descrição : \n${anu.desc}`
-bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: alteraçãoDaDescrição})
-console.log(anu)
-}
-
-/********** FUCTION BATERIA **********/
-pedro.on('CB:action,,battery', json => {
-global.batteryLevelStr = json[2][0][1].value
-global.batterylevel = parseInt(batteryLevelStr)
-baterai = batterylevel
-if (json[2][0][1].live == 'true') charging = true
-if (json[2][0][1].live == 'false') charging = false
-})
-global.p
-global.batrei = global.batrei ? global.batrei : []
-pedro.on('CB:action,,battery', json => {
-const batteryLevelStr = json[2][0][1].value
-const batterylevel = parseInt(batteryLevelStr)
-global.batrei.push(batterylevel)
-})
-
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
