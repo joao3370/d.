@@ -7,7 +7,6 @@ const Crypto = require('crypto')
 const CFonts  = require('cfonts')
 
 const uang = JSON.parse(fs.readFileSync('./base de dados/datauser/uang.json'))
-const _cashB = JSON.parse(fs.readFileSync('./base de dados/lib/cash_.json'))
 corzinhas = ["red","green","yellow","blue","magenta","cyan","white","gray","redBright","greenBright","yellowBright","blueBright","magentaBright","cyanBright","whiteBright"]
 const cor1 = corzinhas[Math.floor(Math.random() * (corzinhas.length))]	
 const cor2 = corzinhas[Math.floor(Math.random() * (corzinhas.length))]	
