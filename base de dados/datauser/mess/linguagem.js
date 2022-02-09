@@ -602,7 +602,7 @@ name = titleBot[Math.floor(Math.random() * titleBot.length)]
 return name
 }
 
-exports.nameByTobi = (me) => {
+exports.nameBypedro = (me) => {
 return `_*${me.name}™*_`
 }
 
@@ -614,7 +614,7 @@ exports.modeOff = (comando) => {
 return `*_${emojiK} Comando: ${comando}_*\n*_${emojiK} Situação: ${comando} Está ligado_*`
 }
 
-exports.okLolizitaBot = (me) => {
+exports.okPedro = (me) => {
 return `Ok ${me.name}™`
 }
 
@@ -653,5 +653,5 @@ return buffer;
 }
 
 exports.nameOfTheBor = () => {
-return "⚠︎⃟ꦿ𝐿𝛩𝐿𝐼𝑍𝐼𝑇𝛥-𝐵❍亇シ⃟⃛ ➮";
+return "Pedro";
 }
