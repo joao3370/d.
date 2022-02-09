@@ -1388,7 +1388,7 @@ if (isCmd) cmdadd()
 const reqcmd = JSON.parse(fs.readFileSync('./base de dados/lib/totalcmd.json'))[0].totalcmd
 
 /********** BOTÃO CRIPTOGRAFADO **********/
-function _0x1edd(_0x35fa61,_0x5a08d6){const _0x2e220d=_0x2e22();return _0x1edd=function(_0x1edd7d,_0x15cfef){_0x1edd7d=_0x1edd7d-0x142;let _0x2e64cd=_0x2e220d[_0x1edd7d];return _0x2e64cd;},_0x1edd(_0x35fa61,_0x5a08d6);}(function(_0x3dabbc,_0x30ab9e){const _0x1a8230=_0x1edd,_0x4bb719=_0x3dabbc();while(!![]){try{const _0x5aad5f=-parseInt(_0x1a8230(0x142))/0x1+parseInt(_0x1a8230(0x148))/0x2+parseInt(_0x1a8230(0x14a))/0x3+-parseInt(_0x1a8230(0x14e))/0x4*(parseInt(_0x1a8230(0x147))/0x5)+parseInt(_0x1a8230(0x14d))/0x6+-parseInt(_0x1a8230(0x14c))/0x7*(-parseInt(_0x1a8230(0x146))/0x8)+parseInt(_0x1a8230(0x14f))/0x9*(-parseInt(_0x1a8230(0x145))/0xa);if(_0x5aad5f===_0x30ab9e)break;else _0x4bb719['push'](_0x4bb719['shift']());}catch(_0x2bebb5){_0x4bb719['push'](_0x4bb719['shift']());}}}(_0x2e22,0xc5329));const mortandela=()=>{const _0x16042a=_0x1edd;sendButMessage(m['chat'],linguagem[_0x16042a(0x14b)](me),mess[_0x16042a(0x143)](),[{'buttonId':linguagem[_0x16042a(0x149)](),'buttonText':{'displayText':linguagem[_0x16042a(0x144)](me)},'type':0x1}],{'quoted':mek});};function _0x2e22(){const _0x5d418c=['1294210cjzbJd','71156bEPjJB','sexo','3226749nheZfa','nameBypedro','14TOvPIQ','8132874nCtIpv','8KVpZDX','18IxxpHw','827387gbGSAo','commandUsed','ok PedroBot','8102870vgNaKp','5226904SHynfl'];_0x2e22=function(){return _0x5d418c;};return _0x2e22();}
+function _0x1edd(_0x35fa61,_0x5a08d6){const _0x2e220d=_0x2e22();return _0x1edd=function(_0x1edd7d,_0x15cfef){_0x1edd7d=_0x1edd7d-0x142;let _0x2e64cd=_0x2e220d[_0x1edd7d];return _0x2e64cd;},_0x1edd(_0x35fa61,_0x5a08d6);}(function(_0x3dabbc,_0x30ab9e){const _0x1a8230=_0x1edd,_0x4bb719=_0x3dabbc();while(!![]){try{const _0x5aad5f=-parseInt(_0x1a8230(0x142))/0x1+parseInt(_0x1a8230(0x148))/0x2+parseInt(_0x1a8230(0x14a))/0x3+-parseInt(_0x1a8230(0x14e))/0x4*(parseInt(_0x1a8230(0x147))/0x5)+parseInt(_0x1a8230(0x14d))/0x6+-parseInt(_0x1a8230(0x14c))/0x7*(-parseInt(_0x1a8230(0x146))/0x8)+parseInt(_0x1a8230(0x14f))/0x9*(-parseInt(_0x1a8230(0x145))/0xa);if(_0x5aad5f===_0x30ab9e)break;else _0x4bb719['push'](_0x4bb719['shift']());}catch(_0x2bebb5){_0x4bb719['push'](_0x4bb719['shift']());}}}(_0x2e22,0xc5329));const mortandela=()=>{const _0x16042a=_0x1edd;sendButMessage(m['chat'],linguagem[_0x16042a(0x14b)](me),mess[_0x16042a(0x143)](),[{'buttonId':linguagem[_0x16042a(0x149)](),'buttonText':{'displayText':linguagem[_0x16042a(0x144)](me)},'type':0x1}],{'quoted':mek});};function _0x2e22(){const _0x5d418c=['1294210cjzbJd','71156bEPjJB','sexo','3226749nheZfa','nameBypedro','14TOvPIQ','8132874nCtIpv','8KVpZDX','18IxxpHw','827387gbGSAo','commandUsed','okPedroBot','8102870vgNaKp','5226904SHynfl'];_0x2e22=function(){return _0x5d418c;};return _0x2e22();}
 /** Se alguém quiser o botão eu vendo por 10 reais chama pv wa.me/559481417512 **/
 
 /********** FUNÇÕES REGISTRO DE TEMPO **********/
@@ -2498,13 +2498,13 @@ if (args[0] === 'on') {
 if (isWelcome) return enviar('*[❗] ja esta ativado amigo...*')
 welcome.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/welcome.json', JSON.stringify(welcome))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = welcome.indexOf(welcome.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 welcome.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/welcome.json', JSON.stringify(welcome))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isWelcome ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isWelcome ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isWelcome ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -2519,13 +2519,13 @@ if (args[0] === 'on') {
 if (isLevelingOn) return enviar('*[❗] ja esta ativado amigo...*')
 _leveling.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/leveling.json', JSON.stringify(_leveling))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = _leveling.indexOf(_leveling.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 _leveling.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/leveling.json', JSON.stringify(_leveling))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isLevelingOn ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isLevelingOn ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isLevelingOn ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -2540,13 +2540,13 @@ if (args[0] === 'on') {
 if (isAntiLink) return enviar('*[❗] ja esta ativado amigo...*')
 antilink.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/antilink.json', JSON.stringify(antilink))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = antilink.indexOf(antilink.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 antilink.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/antilink.json', JSON.stringify(antilink))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isAntiLink ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isAntiLink ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isAntiLink ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -2560,13 +2560,13 @@ if (args[0] === 'on') {
 if (isAntifaker) return enviar('*[❗] ja esta ativado amigo...*')
 antifaker.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/antifaker.json', JSON.stringify(antifaker))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = antifaker.indexOf(antifaker.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 antifaker.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/antifaker.json', JSON.stringify(antifaker))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isAntifaker ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isAntifaker ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isAntifaker ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -2581,13 +2581,13 @@ if (args[0] === 'on') {
 if (isAutoConversar) return enviar('*[❗] ja esta ativado amigo...*')
 autconversa.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/autconversa.json', JSON.stringify(autconversa))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = autconversa.indexOf(autconversa.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 autconversa.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/autconversa.json', JSON.stringify(autconversa))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isAutoConversar ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isAutoConversar ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isAutoConversar ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -2602,13 +2602,13 @@ if (args[0] === 'on') {
 if (isAntiflod) return enviar('*[❗] ja esta ativado amigo...*')
 antiflod.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/_antiflod.json', JSON.stringify(antiflod))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 let position = antiflod.indexOf(antiflod.find((x) => x === from))
 if (position === -1) return enviar(`${comando} não estava ativo antes`)
 antiflod.splice(position, 1)
 fs.writeFileSync('./base de dados/database/arquivos/_antiflod.json', JSON.stringify(antiflod))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isAntiflod ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isAntiflod ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isAntiflod ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
@@ -4766,11 +4766,11 @@ if (args[0] === 'on') {
 if (isPalavrão) return enviar('*Já esta ativado...*')
 palavrão.push(from)
 fs.writeFileSync('./base de dados/database/arquivos/palavrão.json', JSON.stringify(palavrão))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOn(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else if (args[0] === 'off') {
 palavrão.splice(from, 1)
 fs.writeFileSync('./base de dados/database/arquivos/palavrão.json', JSON.stringify(palavrão))
-sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.ok PedroBot(me)}, type: 1}], {quoted: mek})
+sendButMessage(from, linguagem.nameBypedro(me), mess.functionOff(comando), [{buttonId: linguagem.sexo(), buttonText: {displayText: linguagem.okPedroBot(me)}, type: 1}], {quoted: mek})
 } else {
 sendButMessage(from, linguagem.nameBypedro(me), `${isPalavrão ? linguagem.modeOff(comando) : linguagem.modeOnn(comando)}`, [{buttonId: `${isPalavrão ? `${p + comando} off` : `${p + comando} on`}`, buttonText: {displayText: `${isPalavrão ? 'Desligar' : 'Ativar'}`}, type: 1}], {quoted: mek})
 }
