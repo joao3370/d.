@@ -782,14 +782,6 @@ console.log('Error : %s', color(e, 'red'))
 }
 })
 
-bdr.on('group-update', async (anu) => {
-falfa = {key: {fromMe: false,participant: "0@s.whatsapp.net",
-remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "a", "caption": `${NomeDoBot}`}}}
-const grupoAbertoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗GRUPO ABERTO❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
-const grupoFechadoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗GRUPO FECHADO❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
-const alteraçãoDaDescrição = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 ❗DESCRIÇÃO ALTERADA❗ 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
-metdata = await bdr.groupMetadata(anu.jid)
-
 /**** FUNCTION GRUPO ABERTO ****/
 if(anu.announce == 'false'){
 teks = `「 [❗] GRUPO ABERTO 」\n\n_O grupo foi aberto pelo administrador_\n_Agora todos os membros podem enviar mensagens_`
