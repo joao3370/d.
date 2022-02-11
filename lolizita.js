@@ -737,7 +737,7 @@ if (!welkom.includes(anu.jid)) return
 
     buff = await getBuffer(` {ppmig}`)
 
-//         	img = await getBuffer(`https://servant-of-evil.herokuapp.com/api/swiftlite/welkom?nama=${num.split('@')[0]}&gc=${encodeUrl(mdata.subject)}&ppgc=${shortgc.data}&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'&member=${mdata.participants.length}&apikey=GFL`)
+//         	img = await getBuffer(``)
 
             teks = `「🪐」 𝗢𝗹𝗮 @${num.split('@')[0]} \n 𝗯𝗲𝗺 𝘃𝗶𝗻𝗱𝗼(𝗮) 𝗹𝗲𝗶𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 𝗽𝗮𝗿𝗮, 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗼 𝗯𝗼𝘁 𝗱𝗶𝗴𝗶𝘁𝗲 .menu 🔮 `
 
