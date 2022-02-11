@@ -733,14 +733,12 @@ num = anu.participants[0]
 console.log(anu)
 ini_user = pedro.contacts[num]
 namaewa = ini_user.notify
-member = mdata.participants.length
-try {
 var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 } catch {
 var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 try {
-var ppgc = await conn.getProfilePicture(anu.jid)
+var ppgc = await pedro.getProfilePicture(anu.jid)
 } catch {
 var ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
