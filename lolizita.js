@@ -698,137 +698,97 @@ var  tempoByPedro = '' +  tempoByPedro;
 
 //WELCOME
 
-	pedro.on('group-participants-update', async (anu) => {
+conn.on('group-participants-update', async (anu) => {
+const mdata = await conn.groupMetadata(anu.jid)  
+const adeuscara = JSON.parse(fs.readFileSync('./base de dados/database/arquivos/adeuscara.json'))
+const dbackid = []
+for(i=0;i<adeuscara.length;++i) dbackid.push(adeuscara[i].groupId)
+console.log(anu)
+if(dbackid.indexOf(anu.jid) >= 0) {
+if (anu.action == 'add'){ 
+num = anu.participants[0]
+var ind = dbackid.indexOf(anu.jid)
+if(adeuscara[ind].actived && adeuscara[ind].number.indexOf(num.split('@')[0]) >= 0) {
+await conn.sendMessage(mdata.id, 'Olha quem deu as cara por aqui, sente o poder do ban cabaço', MessageType.text)
+conn.groupRemove(mdata.id, [num])
+return
+}
+}
+}
 if(antifake.includes(anu.jid)) {
-	const mdata = await megumin.groupMetadata(anu.jid)
-			if (anu.action == 'add'){
-				num = anu.participants[0]
-				if(!num.split('@')[0].startsWith(55)) {
-				megumin.sendMessage(mdata.id, '👮‍♂️Números fake sao proibidos aqui', MessageType.text)							
-				setTimeout(async function () {
-							console.log(color('[','white'), color('!','red'), color(']','white'), color('Removendo','red'))
-				pedro.groupRemove(mdata.id, [num])
-					}, )
-				}
-			}
-		}		
+if (anu.action == 'add'){
+num = anu.participants[0]
+if(!num.split('@')[0].startsWith(55)) {
+conn.sendMessage(mdata.id, ' ⛹️⛹️Bye Bye Estrangeiro...👋🏌️', MessageType.text)
+setTimeout(async function () {
+conn.groupRemove(mdata.id, [num])
+}, 1000)
+}
+}
+}
 if (!welkom.includes(anu.jid)) return
-      try {
-         const mdata = await pedro.groupMetadata(anu.jid)
-         num = anu.participants[0]
-         console.log(anu)
-         ini_user = pedro.contacts[num]
-         namaewa = ini_user.notify
-         member = mdata.participants.
+try {
+const mdata = await conn.groupMetadata(anu.jid)
+num = anu.participants[0]
+console.log(anu)
+ini_user = conn.contacts[num]
+namaewa = ini_user.notify
+member = mdata.participants.length
+try {
+var ppimg = await conn.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+} catch {
+var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+}
+try {
+var ppgc = await conn.getProfilePicture(anu.jid)
+} catch {
+var ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+}
+shortpc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppimg}`)
+shortgc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppgc}`)
 
-         try {
-               var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
-            } catch {
-               var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-            }
-        try {
-               var ppgc = await pedro.getProfilePicture(anu.jid)
-            } catch {
-               var ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-            }
-        shortpc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppimg}`)
-        shortgc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppgc}`)
-			  if (anu.action == 'add') {
+const wel = { key: { participant: `0@s.whatsapp.net`, ...{}}, message: { "orderGroup": { message: `⊳ GRUPO : ${mdata.subject}`}}}
+       
+if (anu.action == 'add') {
+img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=BEM VINDO(A)&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo1}&grupo=SEJA BEM VINDO AO GRUPO ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
+console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
+teks = `${nescessario.legendabv}`
+conn.sendMessage(mdata.id, img, MessageType.image, {caption: teks, quoted: wel, contextInfo: {'mentionedJid': [num]} })
+} else if (anu.action == 'remove') {
+img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=ADEUS&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo2}&grupo=SAIU DE ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
+console.log(color('[REMOVE] Saiu ou foi removido', 'red'))
+teks = `${nescessario.legendasaiu}`
+conn.sendMessage(mdata.id, img, MessageType.image, {caption: teks,quoted: wel, contextInfo: {'mentionedJid': [num]}})
+}
+} catch (e) {
+console.log('Erro : %s', color(e, 'red'))
+}})
 
-    buff = await getBuffer(` {ppmig}`)
-
-//         	img = await getBuffer(``)
-
-            teks = `「🪐」 𝗢𝗹𝗮 @${num.split('@')[0]} \n 𝗯𝗲𝗺 𝘃𝗶𝗻𝗱𝗼(𝗮) 𝗹𝗲𝗶𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 𝗽𝗮𝗿𝗮, 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗼 𝗯𝗼𝘁 𝗱𝗶𝗴𝗶𝘁𝗲 .menu 🔮 `
-
-            But = [{buttonId:`.menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId:`.rg `,buttonText:{displayText:'REGISTRO📜'},type:1},{buttonId:`.criador`,buttonText:{displayText: `CRIADOR♣️`},type:1}]
-
-			mhan = await megumin.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
-
-const buttonMessages = { imageMessage: mhan.message.imageMessage,
-
-contentText: `${teks}`,
-
-footerText: ` 🌈BEM VINDO MENBRO NOVO✨`, 
-
-buttons: But,
-
-headerType: 4 }
-
-			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('media/chat.jpg'),caption: teks, contextInfo: {'mentionedJid': [num]}})
-         } else if (anu.action == 'remove') {
-			const welkom = JSON.parse(fs.readFileSync('./base de dados/database/arquivos/welcome.json'))
-        	if(!welcome.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pedro;;;\nFN:pedro\nitem1.TEL;waid=4888644281:4888644281\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
-			num = anu.participants[0]
-			try {
-			ppimg = await megumin.getProfilePicture(`${num.split('@')[0]}@c.us`)
-			} catch {
-			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-			}
-			let buff = await getBuffer(ppimg)
-			keluar =` 𝗢 𝗜𝗡𝗧𝗘𝗚𝗥𝗔𝗡𝗧𝗘 @${num.split('@')[0]}\nSᴀɪᴜ ᴅᴏ ɢʀᴜᴘᴏ sᴀʏᴏɴᴀʀᴀ 💫`
-			But = [{buttonId: `.menu`,buttonText:{displayText: '🪐 M E N U 🦋'},type:1}]
-			mhan = await pedro.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
-const buttonMessages = { imageMessage: mhan.message.imageMessage,
-contentText: `${keluar}`,
-footerText: `A`,
-buttons: But,
-headerType: 4 }
-			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./megumin.jpeg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes'})
-          } else if (anu.action == 'promote') {
-            img = await getBuffer(`http://hadi-api.herokuapp.com/api/card/promote?nama=${encodeUrl(namaewa)}&member=${member}&pesan=Parabéns por se tornar um adm do grupo!&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'`)
-            let buff = await getBuffer(ppimg)
-            teks = `💫 𝗣𝗥𝗢𝗠𝗢𝗩𝗘?? 𝗗𝗘??𝗘𝗖𝗧𝗔𝗗𝗢💫\n\n├─ Número: ${num.replace('@s.whatsapp.net', '')}\n├─ @${num.split('@')[0]} 𝗦𝗘 𝗧𝗢𝗥𝗡𝗢𝗨 𝗔𝗗𝗠 𝗗𝗢 𝗚𝗥𝗨𝗣𝗢 𝗣𝗔𝗥𝗔𝗕𝗘𝗡𝗦 💫`
-            gbutsan = [{buttonId: `.menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId:`.dono`,buttonText:{displayText:'CRIADOR'},type:1}]
-			mhan = await pedro.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
-const buttonMessages = { imageMessage: mhan.message.imageMessage,
-contentText: `${teks}`,
-footerText: `opa adm para usar o bot use .menu`, 
-buttons: gbutsan,
-headerType: 4 }
-			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./megumin.jpg'),caption: teks, contextInfo: {'mentionedJid': [num]}})
-         } else if (anu.action == 'demote') {
-            img = await getBuffer(`http://hadi-api.herokuapp.com/api/card/demote?nama=${encodeUrl(namaewa)}&member=${member}&pesan=${namaewa} virou membro comum&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'`)
-            teks = `◪ DESPROMOVER DETECTADO\n\n\n├─ Número: ${num.replace('@s.whatsapp.net', '')}\n├─  @${num.split('@')[0]} Não e mais um administrador do grupo`
-            pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks, contextInfo: {'mentionedJid': [num]}})
-         }
-     } catch (e) {
-         console.log('Error : %s', color(e, 'red'))
-      }
-})
-	pedro.on('group-update', async (anu) => {
-falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
-remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "megumin", "caption": `megumin-BOT️`, 'jpegThumbnail': fs.readFileSync(`src/logo.jpeg`)}}}
-  metdata = await megumin.groupMetadata(anu.jid)
-    if(anu.announce == 'false'){
-    teks = `「 「❔ 」GRUPO ABERTO 」\n\n_O grupo foi aberto pelo administrador_\n_Agora todos os membros podem enviar mensagens_`
-    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(anu)
-  }
-  else if(anu.announce == 'true'){
-    teks = `「 「❔ 」GRUPO FECHADO 」\n\n_O grupo foi fechado pelo administrador_\n_Agora, apenas administradores podem enviar mensagens_`
-    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(anu)
-  }
-  else if(!anu.desc == ''){
-    tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-    teks = `「 「❔ 」DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo foi alterada pelo administrador wa.me/${anu.descOwner.split('@')[0]}\n• Nova Descrição : \n${anu.desc}`
-    megumin.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: falfa})
-    console.log(anu)
-  }
-  else if(anu.restrict == 'false'){
-    teks = `「 As configuração do grupo foi alterada 」\nAgora todos os membros podem editar as informações deste grupo`
-    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(anu)
-  }
-  else if(anu.restrict == 'true'){
-    teks = `「 As configuração do grupo foi alterada 」\n\nos Membros comum não pode mais editar o grupo\nSomente admins`
-    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-    console.log(anu)
-  }
-})
-
+conn.on('group-participants-update', async (anu) => { 
+if (!vacilo.includes(anu.jid)) return
+try {
+const mdata = await conn.groupMetadata(anu.jid)
+num = anu.participants[0]
+console.log(anu)
+if (anu.action == 'promote') {
+k = `[ PROMOÇÃO DETECTADA]\n@${num.split("@")[0]} foi promovido a adm`
+conn.sendMessage(mdata.id, k, MessageType.text)
+console.log(color('[PROMOVIDO]', 'red')),(color(`${num.split('@')[0]} \nfoi promovido a adm`, 'blue'))
+} else if (anu.action == 'demote') {
+num = anu.participants[0]
+conn.sendMessage(mdata.id, `[REBAIXAMENTO DETECTADO]\n@${num.split("@")[0]} nao é mais adm kkkkk`, MessageType.text)
+console.log(color('[DEMOTE]', 'red')), (color(`${num.split('@')[0]} foi rebaixado a membro comum kkkk`, 'blue'))
+} else if (anu.action == 'add') {
+const grupo = await conn.groupMetadata(anu.jid)
+num = anu.participants[0]
+console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
+await conn.sendMessage(grupo.id, `🔥፝⃟ Olá ${num.split('@')[0]} Seja bem vindo(a) ao grupo. leia as regras, para evitar banimento permanente`, MessageType.text)
+} else if (anu.action == 'remove') {
+num = anu.participants[0]
+const grupo = await conn.groupMetadata(anu.jid)
+if(num === conn.user.jid)return console.log('fui add em gp')
+await conn.sendMessage(grupo.id, `tchau ${num.split("@")[0]}`, MessageType.text)
+}}catch (e) { console.log('Erro : %s', color(e, 'red'))}})
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
