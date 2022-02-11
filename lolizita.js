@@ -698,7 +698,7 @@ var  tempoByPedro = '' +  tempoByPedro;
 
 //WELCOME
 
-conn.on('group-participants-update', async (anu) => {
+pedro.on('group-participants-update', async (anu) => {
 const mdata = await conn.groupMetadata(anu.jid)  
 const adeuscara = JSON.parse(fs.readFileSync('./base de dados/database/arquivos/adeuscara.json'))
 const dbackid = []
@@ -709,8 +709,8 @@ if (anu.action == 'add'){
 num = anu.participants[0]
 var ind = dbackid.indexOf(anu.jid)
 if(adeuscara[ind].actived && adeuscara[ind].number.indexOf(num.split('@')[0]) >= 0) {
-await conn.sendMessage(mdata.id, 'Olha quem deu as cara por aqui, sente o poder do ban cabaço', MessageType.text)
-conn.groupRemove(mdata.id, [num])
+await pedro.sendMessage(mdata.id, 'Olha quem deu as cara por aqui, sente o poder do ban cabaço', MessageType.text)
+pedro.groupRemove(mdata.id, [num])
 return
 }
 }
@@ -719,7 +719,7 @@ if(antifake.includes(anu.jid)) {
 if (anu.action == 'add'){
 num = anu.participants[0]
 if(!num.split('@')[0].startsWith(55)) {
-conn.sendMessage(mdata.id, ' ⛹️⛹️Bye Bye Estrangeiro...👋🏌️', MessageType.text)
+pedro.sendMessage(mdata.id, ' ⛹️⛹️Bye Bye Estrangeiro...👋🏌️', MessageType.text)
 setTimeout(async function () {
 conn.groupRemove(mdata.id, [num])
 }, 1000)
@@ -728,14 +728,14 @@ conn.groupRemove(mdata.id, [num])
 }
 if (!welkom.includes(anu.jid)) return
 try {
-const mdata = await conn.groupMetadata(anu.jid)
+const mdata = await pedro.groupMetadata(anu.jid)
 num = anu.participants[0]
 console.log(anu)
-ini_user = conn.contacts[num]
+ini_user = pedro.contacts[num]
 namaewa = ini_user.notify
 member = mdata.participants.length
 try {
-var ppimg = await conn.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 } catch {
 var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
@@ -753,40 +753,40 @@ if (anu.action == 'add') {
 img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=BEM VINDO(A)&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo1}&grupo=SEJA BEM VINDO AO GRUPO ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
 console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
 teks = `${nescessario.legendabv}`
-conn.sendMessage(mdata.id, img, MessageType.image, {caption: teks, quoted: wel, contextInfo: {'mentionedJid': [num]} })
+pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks, quoted: wel, contextInfo: {'mentionedJid': [num]} })
 } else if (anu.action == 'remove') {
 img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=ADEUS&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo2}&grupo=SAIU DE ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
 console.log(color('[REMOVE] Saiu ou foi removido', 'red'))
 teks = `${nescessario.legendasaiu}`
-conn.sendMessage(mdata.id, img, MessageType.image, {caption: teks,quoted: wel, contextInfo: {'mentionedJid': [num]}})
+pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks,quoted: wel, contextInfo: {'mentionedJid': [num]}})
 }
 } catch (e) {
 console.log('Erro : %s', color(e, 'red'))
 }})
 
-conn.on('group-participants-update', async (anu) => { 
+pedro.on('group-participants-update', async (anu) => { 
 if (!vacilo.includes(anu.jid)) return
 try {
-const mdata = await conn.groupMetadata(anu.jid)
+const mdata = await pedro.groupMetadata(anu.jid)
 num = anu.participants[0]
 console.log(anu)
 if (anu.action == 'promote') {
 k = `[ PROMOÇÃO DETECTADA]\n@${num.split("@")[0]} foi promovido a adm`
-conn.sendMessage(mdata.id, k, MessageType.text)
+pedro.sendMessage(mdata.id, k, MessageType.text)
 console.log(color('[PROMOVIDO]', 'red')),(color(`${num.split('@')[0]} \nfoi promovido a adm`, 'blue'))
 } else if (anu.action == 'demote') {
 num = anu.participants[0]
-conn.sendMessage(mdata.id, `[REBAIXAMENTO DETECTADO]\n@${num.split("@")[0]} nao é mais adm kkkkk`, MessageType.text)
+pedro.sendMessage(mdata.id, `[REBAIXAMENTO DETECTADO]\n@${num.split("@")[0]} nao é mais adm kkkkk`, MessageType.text)
 console.log(color('[DEMOTE]', 'red')), (color(`${num.split('@')[0]} foi rebaixado a membro comum kkkk`, 'blue'))
 } else if (anu.action == 'add') {
-const grupo = await conn.groupMetadata(anu.jid)
+const grupo = await pedro.groupMetadata(anu.jid)
 num = anu.participants[0]
 console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
 await conn.sendMessage(grupo.id, `🔥፝⃟ Olá ${num.split('@')[0]} Seja bem vindo(a) ao grupo. leia as regras, para evitar banimento permanente`, MessageType.text)
 } else if (anu.action == 'remove') {
 num = anu.participants[0]
 const grupo = await conn.groupMetadata(anu.jid)
-if(num === conn.user.jid)return console.log('fui add em gp')
+if(num === pedro.user.jid)return console.log('fui add em gp')
 await conn.sendMessage(grupo.id, `tchau ${num.split("@")[0]}`, MessageType.text)
 }}catch (e) { console.log('Erro : %s', color(e, 'red'))}})
 /********** FUCTION BATERIA **********/
