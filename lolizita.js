@@ -699,31 +699,135 @@ var  tempoByPedro = '' +  tempoByPedro;
 //WELCOME
 
 	pedro.on('group-participants-update', async (anu) => {
-if (antifaker.includes(anu.jid)) {
-const mdata = await bdr.groupMetadata(anu.jid)
-if (anu.action == 'add'){
-num = anu.participants[0]
-if(!num.split('@')[0].startsWith(55)) {
-pedro.sendMessage(mdata.id, 'Números fake não são permitidos nesse grupo️️', MessageType.text)							
-setTimeout(async function () {
-console.log(color('[','white'), color('!','red'), color(']','white'), color('Banindo...','red'))
-pedro.groupRemove(mdata.id, [num])
-}, 5000)
-}
-}
-}		
-  
-if (!welcome.includes(anu.jid)) return
-try {
-const mdata = await bdr.groupMetadata(anu.jid)
-console.log(anu)
-if (anu.action == 'add') {
-num = anu.participants[0]
-try {
-ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
-} catch {
-ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
-}
+if(antifake.includes(anu.jid)) {
+	const mdata = await megumin.groupMetadata(anu.jid)
+			if (anu.action == 'add'){
+				num = anu.participants[0]
+				if(!num.split('@')[0].startsWith(55)) {
+				megumin.sendMessage(mdata.id, '👮‍♂️Números fake sao proibidos aqui', MessageType.text)							
+				setTimeout(async function () {
+							console.log(color('[','white'), color('!','red'), color(']','white'), color('Removendo','red'))
+				pedro.groupRemove(mdata.id, [num])
+					}, )
+				}
+			}
+		}		
+if (!welkom.includes(anu.jid)) return
+      try {
+         const mdata = await pedro.groupMetadata(anu.jid)
+         num = anu.participants[0]
+         console.log(anu)
+         ini_user = pedro.contacts[num]
+         namaewa = ini_user.notify
+         member = mdata.participants.length
+
+         try {
+               var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+            } catch {
+               var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+            }
+        try {
+               var ppgc = await pedro.getProfilePicture(anu.jid)
+            } catch {
+               var ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+            }
+        shortpc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppimg}`)
+        shortgc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppgc}`)
+			  if (anu.action == 'add') {
+
+    buff = await getBuffer(` {ppmig}`)
+
+//         	img = await getBuffer(`https://servant-of-evil.herokuapp.com/api/swiftlite/welkom?nama=${num.split('@')[0]}&gc=${encodeUrl(mdata.subject)}&ppgc=${shortgc.data}&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'&member=${mdata.participants.length}&apikey=GFL`)
+
+            teks = `「🪐」 𝗢𝗹𝗮 @${num.split('@')[0]} \n 𝗯𝗲𝗺 𝘃𝗶𝗻𝗱𝗼(𝗮) 𝗹𝗲𝗶𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 𝗽𝗮𝗿𝗮, 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗼 𝗯𝗼𝘁 𝗱𝗶𝗴𝗶𝘁𝗲 .menu 🔮 `
+
+            But = [{buttonId:`.menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId:`.rg `,buttonText:{displayText:'REGISTRO📜'},type:1},{buttonId:`.criador`,buttonText:{displayText: `CRIADOR♣️`},type:1}]
+
+			mhan = await megumin.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
+
+const buttonMessages = { imageMessage: mhan.message.imageMessage,
+
+contentText: `${teks}`,
+
+footerText: ` 🌈BEM VINDO MENBRO NOVO✨`, 
+
+buttons: But,
+
+headerType: 4 }
+
+			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('media/chat.jpg'),caption: teks, contextInfo: {'mentionedJid': [num]}})
+         } else if (anu.action == 'remove') {
+			const welkom = JSON.parse(fs.readFileSync('./base de dados/database/arquivos/welcome.json'))
+        	if(!welcome.includes(mdata.id)) return
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pedro;;;\nFN:pedro\nitem1.TEL;waid=4888644281:4888644281\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			num = anu.participants[0]
+			try {
+			ppimg = await megumin.getProfilePicture(`${num.split('@')[0]}@c.us`)
+			} catch {
+			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+			}
+			let buff = await getBuffer(ppimg)
+			keluar =` 𝗢 𝗜𝗡𝗧𝗘𝗚𝗥𝗔𝗡𝗧𝗘 @${num.split('@')[0]}\nSᴀɪᴜ ᴅᴏ ɢʀᴜᴘᴏ sᴀʏᴏɴᴀʀᴀ 💫`
+			But = [{buttonId: `.menu`,buttonText:{displayText: '🪐 M E N U 🦋'},type:1}]
+			mhan = await pedro.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
+const buttonMessages = { imageMessage: mhan.message.imageMessage,
+contentText: `${keluar}`,
+footerText: `A`,
+buttons: But,
+headerType: 4 }
+			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./megumin.jpeg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes'})
+          } else if (anu.action == 'promote') {
+            img = await getBuffer(`http://hadi-api.herokuapp.com/api/card/promote?nama=${encodeUrl(namaewa)}&member=${member}&pesan=Parabéns por se tornar um adm do grupo!&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'`)
+            let buff = await getBuffer(ppimg)
+            teks = `💫 𝗣𝗥𝗢𝗠𝗢𝗩𝗘?? 𝗗𝗘??𝗘𝗖𝗧𝗔𝗗𝗢💫\n\n├─ Número: ${num.replace('@s.whatsapp.net', '')}\n├─ @${num.split('@')[0]} 𝗦𝗘 𝗧𝗢𝗥𝗡𝗢𝗨 𝗔𝗗𝗠 𝗗𝗢 𝗚𝗥𝗨𝗣𝗢 𝗣𝗔𝗥𝗔𝗕𝗘𝗡𝗦 💫`
+            gbutsan = [{buttonId: `.menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId:`.dono`,buttonText:{displayText:'CRIADOR'},type:1}]
+			mhan = await pedro.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
+const buttonMessages = { imageMessage: mhan.message.imageMessage,
+contentText: `${teks}`,
+footerText: `opa adm para usar o bot use .menu`, 
+buttons: gbutsan,
+headerType: 4 }
+			pedro.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./megumin.jpg'),caption: teks, contextInfo: {'mentionedJid': [num]}})
+         } else if (anu.action == 'demote') {
+            img = await getBuffer(`http://hadi-api.herokuapp.com/api/card/demote?nama=${encodeUrl(namaewa)}&member=${member}&pesan=${namaewa} virou membro comum&pp=${shortpc.data}&bg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxANrjm0j_uzUclnOAlHjtgroMtblwSPChJg&usqp=CAU'`)
+            teks = `◪ DESPROMOVER DETECTADO\n\n\n├─ Número: ${num.replace('@s.whatsapp.net', '')}\n├─  @${num.split('@')[0]} Não e mais um administrador do grupo`
+            pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks, contextInfo: {'mentionedJid': [num]}})
+         }
+     } catch (e) {
+         console.log('Error : %s', color(e, 'red'))
+      }
+})
+	pedro.on('group-update', async (anu) => {
+falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
+remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "megumin", "caption": `megumin-BOT️`, 'jpegThumbnail': fs.readFileSync(`src/logo.jpeg`)}}}
+  metdata = await megumin.groupMetadata(anu.jid)
+    if(anu.announce == 'false'){
+    teks = `「 「❔ 」GRUPO ABERTO 」\n\n_O grupo foi aberto pelo administrador_\n_Agora todos os membros podem enviar mensagens_`
+    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
+    console.log(anu)
+  }
+  else if(anu.announce == 'true'){
+    teks = `「 「❔ 」GRUPO FECHADO 」\n\n_O grupo foi fechado pelo administrador_\n_Agora, apenas administradores podem enviar mensagens_`
+    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
+    console.log(anu)
+  }
+  else if(!anu.desc == ''){
+    tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
+    teks = `「 「❔ 」DESCRIÇÃO DO GRUPO ALTERADA 」\n\nA descrição do grupo foi alterada pelo administrador wa.me/${anu.descOwner.split('@')[0]}\n• Nova Descrição : \n${anu.desc}`
+    megumin.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: falfa})
+    console.log(anu)
+  }
+  else if(anu.restrict == 'false'){
+    teks = `「 As configuração do grupo foi alterada 」\nAgora todos os membros podem editar as informações deste grupo`
+    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
+    console.log(anu)
+  }
+  else if(anu.restrict == 'true'){
+    teks = `「 As configuração do grupo foi alterada 」\n\nos Membros comum não pode mais editar o grupo\nSomente admins`
+    megumin.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
+    console.log(anu)
+  }
+})
 
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
