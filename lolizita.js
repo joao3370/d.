@@ -698,90 +698,49 @@ var  tempoByPedro = '' +  tempoByPedro;
 
 //WELCOME
 
-pedro.on('group-participants-update', async (anu) => {
-const mdata = await conn.groupMetadata(anu.jid)  
-const adeuscara = JSON.parse(fs.readFileSync('./base de dados/database/arquivos/adeuscara.json'))
-const dbackid = []
-for(i=0;i<adeuscara.length;++i) dbackid.push(adeuscara[i].groupId)
-console.log(anu)
-if(dbackid.indexOf(anu.jid) >= 0) {
-if (anu.action == 'add'){ 
-num = anu.participants[0]
-var ind = dbackid.indexOf(anu.jid)
-if(adeuscara[ind].actived && adeuscara[ind].number.indexOf(num.split('@')[0]) >= 0) {
-await pedro.sendMessage(mdata.id, 'Olha quem deu as cara por aqui, sente o poder do ban cabaço', MessageType.text)
-pedro.groupRemove(mdata.id, [num])
-return
-}
-}
-}
-if(antifake.includes(anu.jid)) {
-if (anu.action == 'add'){
-num = anu.participants[0]
-if(!num.split('@')[0].startsWith(55)) {
-pedro.sendMessage(mdata.id, ' ⛹️⛹️Bye Bye Estrangeiro...👋🏌️', MessageType.text)
-setTimeout(async function () {
-conn.groupRemove(mdata.id, [num])
-}, 1000)
-}
-}
-}
 if (!welkom.includes(anu.jid)) return
 try {
 const mdata = await pedro.groupMetadata(anu.jid)
-num = anu.participants[0]
 console.log(anu)
-ini_user = pedro.contacts[num]
-namaewa = ini_user.notify
-var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
-} catch {
-var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-}
-try {
-var ppgc = await pedro.getProfilePicture(anu.jid)
-} catch {
-var ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-}
-shortpc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppimg}`)
-shortgc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppgc}`)
-
-const wel = { key: { participant: `0@s.whatsapp.net`, ...{}}, message: { "orderGroup": { message: `⊳ GRUPO : ${mdata.subject}`}}}
-       
 if (anu.action == 'add') {
-img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=BEM VINDO(A)&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo1}&grupo=SEJA BEM VINDO AO GRUPO ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
-console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
-teks = `${nescessario.legendabv}`
-pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks, quoted: wel, contextInfo: {'mentionedJid': [num]} })
-} else if (anu.action == 'remove') {
-img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=ADEUS&nome=${num.split('@')[0]}&perfil=${shortpc.data}&fundo=${nescessario.fundo2}&grupo=SAIU DE ${encodeUrl(mdata.subject)}&numero=${mdata.participants.length}&membroConta=2021`)
-console.log(color('[REMOVE] Saiu ou foi removido', 'red'))
-teks = `${nescessario.legendasaiu}`
-pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks,quoted: wel, contextInfo: {'mentionedJid': [num]}})
-up-participants-update', async (anu) => { 
-if (!vacilo.includes(anu.jid)) return
+num = anu.participants[0]
 try {
-const mdata = await pedro.groupMetadata(anu.jid)
-num = anu.participants[0]
-console.log(anu)
-if (anu.action == 'promote') {
-k = `[ PROMOÇÃO DETECTADA]\n@${num.split("@")[0]} foi promovido a adm`
-pedro.sendMessage(mdata.id, k, MessageType.text)
-console.log(color('[PROMOVIDO]', 'red')),(color(`${num.split('@')[0]} \nfoi promovido a adm`, 'blue'))
-} else if (anu.action == 'demote') {
-num = anu.participants[0]
-pedro.sendMessage(mdata.id, `[REBAIXAMENTO DETECTADO]\n@${num.split("@")[0]} nao é mais adm kkkkk`, MessageType.text)
-console.log(color('[DEMOTE]', 'red')), (color(`${num.split('@')[0]} foi rebaixado a membro comum kkkk`, 'blue'))
-} else if (anu.action == 'add') {
-const grupo = await pedro.groupMetadata(anu.jid)
-num = anu.participants[0]
-console.log(color('[ADD] entraram via link ou foi adicionado', 'red'))
-await conn.sendMessage(grupo.id, `🔥፝⃟ Olá ${num.split('@')[0]} Seja bem vindo(a) ao grupo. leia as regras, para evitar banimento permanente`, MessageType.text)
+ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+} catch {
+ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+}
+teks = `𝐎𝐩𝐚 @${num.split('@')[0]}\n𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐠𝐫𝐮𝐩𝐨 ${mdata.subject}\n\n𝐥𝐞𝐢𝐚 𝐚𝐬 𝐫𝐞𝐠𝐫𝐚𝐬 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨 𝐩𝐚𝐫𝐚 𝐧𝐚𝐨 𝐬𝐞𝐫 𝐛𝐚𝐧𝐢𝐝𝐨❤️`
+let buff = await getBuffer(ppimg)
+pedro.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+pedro.sendMessage(from, tujuh, MessageType.audio, {quoted: info, mimetype: 'audio/mp4', ptt:true})
 } else if (anu.action == 'remove') {
 num = anu.participants[0]
-const grupo = await conn.groupMetadata(anu.jid)
-if(num === pedro.user.jid)return console.log('fui add em gp')
-await conn.sendMessage(grupo.id, `tchau ${num.split("@")[0]}`, MessageType.text)
-}}catch (e) { console.log('Erro : %s', color(e, 'red'))}})
+try {
+ppimg = await pedro.getProfilePicture(`${num.split('@')[0]}@c.us`)
+} catch {
+ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+}
+teks = `ඞ   。　    .    •
+    •  @${num.split('@')[0]} was E j e c t e d
+               1 impostor restante   。　.
+    　 　　。　　 　　　　ﾟ　　　.　      　　
+𝐁𝐨𝐢 𝐛𝐨𝐢 𝐛𝐨𝐢, 𝐛𝐨𝐢 𝐝𝐚 𝐜𝐚𝐫𝐚 𝐩𝐫𝐞𝐭𝐚 𝐪𝐮𝐞𝐦 𝐬𝐚𝐢𝐮 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨 𝐦𝐚𝐦𝐚 𝐚 𝐩𝐢𝐤𝐚 𝐝𝐨 𝐜𝐚𝐩𝐞𝐭𝐚😂👋`
+        
+let buff = await getBuffer(ppimg)
+pedro.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+}
+} catch (e) {
+console.log('Error : %s', color(e, 'red'))
+}
+})
+
+pedro.on('CB:Blocklist', json => {
+            if (blocked.length > 2) return
+    for (let i of json[1].blocklist) {
+    blocked.push(i.replace('c.us','s.whatsapp.net'))
+    }
+})
+
 /********** FUCTION BATERIA **********/
 pedro.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
@@ -791,7 +750,6 @@ if (json[2][0][1].live == 'true') charging = true
 if (json[2][0][1].live == 'false') charging = false
 console.log(color('🔋Carga da bateria: ' + batterylevel+'%', "yellow"))
 })
-
 /************* LINGUAGEM ************/
 pedro.on('chat-update', async (mek) => {
 try {
