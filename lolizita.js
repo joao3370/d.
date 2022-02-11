@@ -719,7 +719,7 @@ if (!welkom.includes(anu.jid)) return
          console.log(anu)
          ini_user = pedro.contacts[num]
          namaewa = ini_user.notify
-         member = mdata.participants.length
+         member = mdata.participants.
 
          try {
                var ppimg = await pedro.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
