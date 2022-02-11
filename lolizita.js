@@ -757,12 +757,7 @@ img = await getBuffer(`https://api-gdr2.herokuapp.com/api/canvas/menu?titulo=ADE
 console.log(color('[REMOVE] Saiu ou foi removido', 'red'))
 teks = `${nescessario.legendasaiu}`
 pedro.sendMessage(mdata.id, img, MessageType.image, {caption: teks,quoted: wel, contextInfo: {'mentionedJid': [num]}})
-}
-} catch (e) {
-console.log('Erro : %s', color(e, 'red'))
-}})
-
-pedro.on('group-participants-update', async (anu) => { 
+up-participants-update', async (anu) => { 
 if (!vacilo.includes(anu.jid)) return
 try {
 const mdata = await pedro.groupMetadata(anu.jid)
